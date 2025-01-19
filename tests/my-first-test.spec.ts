@@ -1,5 +1,14 @@
 import test, { expect } from "@playwright/test"
+import chance from 'chance'
 
+
+/**
+ * TODO: Add more test steps
+ * ? How to fix 
+ * * Just info message
+ * ! IMPORTANT: Need to check the link before click
+ * ! DON'T PUSH TO PRODUCTION 
+ */
 test('Email should be visible', async ({ page }) => {
 
     // Go to Codemo.dev
