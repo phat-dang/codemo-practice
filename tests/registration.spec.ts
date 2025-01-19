@@ -1,6 +1,6 @@
 import test, { expect } from "@playwright/test"
 
-test('Should login successfully with valid credentials', async ({ page }) => {
+test('Should register successfully with valid information', async ({ page }) => {
 
     // Go to Codemo.dev - Practice E-commerce site
     await page.goto('https://codemo.dev/practice/shop/products')
@@ -8,7 +8,7 @@ test('Should login successfully with valid credentials', async ({ page }) => {
     // Click Create an account link
     await page.getByRole('link', { name: 'Create an account' }).click()
 
-    // Input nessary information
+    // Input necessary information
     await page.getByLabel('Username').fill('user_001')
     await page.getByLabel('Email').fill('user_001@example.com')
     await page.getByLabel('Password').fill('ThisisPassword1')
