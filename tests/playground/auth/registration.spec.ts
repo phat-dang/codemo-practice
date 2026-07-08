@@ -3,7 +3,7 @@ import test, { expect } from "@playwright/test"
 test('Should register successfully with valid information', async ({ page }) => {
 
     // Go to Codemo.dev - Practice E-commerce site
-    await page.goto('https://codemo.dev/practice/shop/products')
+    await page.goto('https://codemo.dev/playground/shop/products')
 
     // Click Create an account link
     await page.getByRole('link', { name: 'Create an account' }).click()

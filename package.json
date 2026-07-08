@@ -2,16 +2,22 @@
   "name": "codemo-practice",
   "version": "1.0.0",
   "description": "Learn and practice automation testing with Codemo exercises",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
+  "author": "ryan",
   "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.7"
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report reports/html",
+    "update": "npx playwright --version && npm install -D @playwright/test@latest && npm playwright install --with-deps && npx playwright --version"
   },
-  "dependencies": {
-    "chance": "^1.1.12"
+  "keywords": [
+    "codemo",
+    "playwright",
+    "practice",
+    "automation",
+    "testing"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0"
   }
 }

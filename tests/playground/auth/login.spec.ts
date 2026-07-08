@@ -3,7 +3,7 @@ import test, { expect } from "@playwright/test"
 test('Should login successfully with valid credentials', async ({ page }) => {
 
     // Go to Codemo.dev - Practice E-commerce site
-    await page.goto('https://codemo.dev/practice/shop/products')
+    await page.goto('https://codemo.dev/playground/shop/products')
 
     // Find Username input field and fill it with 'admin'
     await page.getByLabel('Username').fill('admin')
