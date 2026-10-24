@@ -31,6 +31,7 @@ Visit: [https://codemo.dev/playground/getting-started](https://codemo.dev/playgr
 ### Prerequisites
 - Node.js (v16 or higher)
 - npm
+- or bun 
 
 ### Installation
 

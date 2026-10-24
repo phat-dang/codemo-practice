@@ -7,7 +7,8 @@
   "scripts": {
     "test": "npx playwright test",
     "report": "npx playwright show-report reports/html",
-    "update": "npx playwright --version && npm install -D @playwright/test@latest && npm playwright install --with-deps && npx playwright --version"
+    "update": "npx playwright --version && npm install -D @playwright/test@latest && npm playwright install --with-deps && npx playwright --version",
+    "typecheck": "bun check"
   },
   "keywords": [
     "codemo",
@@ -18,6 +19,7 @@
   ],
   "devDependencies": {
     "@playwright/test": "^1.64.0",
+    "@types/bun": "^1.4.4",
     "@types/node": "^26.6.5"
   }
 }
